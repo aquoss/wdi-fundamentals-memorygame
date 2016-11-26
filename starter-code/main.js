@@ -5,8 +5,20 @@ var cardTwo = "queen";
 var cardThree = "king";
 var cardFour = "king";
 
-if (cardOne === cardTwo) {
+/*if (cardOne === cardTwo) {
 	alert("You found a match!");
 } else {
 	alert("Sorry, try again.");
-}
+}*/
+
+var createCards = function() {
+	var board = document.getElementById('game-board');
+	for (var i=0; i<4; i++) {
+		var card = document.createElement('div');
+		card.className = 'card';
+		board.appendChild(card);
+	}
+};
+
+createCards();
+
